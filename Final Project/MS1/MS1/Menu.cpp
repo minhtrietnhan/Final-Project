@@ -19,6 +19,7 @@ that my professor provided to complete my workshops and assignments.
 |  Student ID: 112512199  |
 |-------------------------+
 */
+#define _CRT_SECURE_NO_WARNINGS
 
 #include "Menu.h"
 

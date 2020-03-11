@@ -21,12 +21,15 @@ that my professor provided to complete my workshops and assignments.
 */
 
 #ifndef _SDDS_MENU_H
-#define _SDDS_MENU_H
+#define	_SDDS_MENU_H
 
-#include "MenuItem.h"
 #include <iostream>
 #include <string>
+#include "MenuItem.h"
+
+
 #define MAX_NO_OF_ITEMS 10
+
 namespace sdds {
 	class Menu
 	{
@@ -56,5 +59,6 @@ namespace sdds {
 		Menu& operator<<(const char* item);
 	};
 }
-#endif
+
+#endif // !_SDDS_MENU_H
 

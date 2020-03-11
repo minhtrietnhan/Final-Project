@@ -20,8 +20,18 @@ that my professor provided to complete my workshops and assignments.
 |-------------------------+
 */
 
+#define _CRT_SECURE_NO_WARNINGS
 #include "MenuItem.h"
-
+#include <iostream>
+#include <cstring>
 namespace sdds {
-
+	MenuItem::MenuItem(const char* content)
+	{
+		if (content == nullptr || strlen(content) == 0)
+			*this = MenuItem();
+		else {
+			this->content = new char[strlen(content) + 1];
+			
+		}
+	}
 }

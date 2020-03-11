@@ -20,12 +20,12 @@ that my professor provided to complete my workshops and assignments.
 |-------------------------+
 */
 
-#ifndef _SDDS_MENU_ITEM_H
-#define _SDDS_MENU_ITEM_H
-#define _CRT_SECURE_NO_WARNINGS
+
+#ifndef _SDDS_MENUITEM_H
+#define _SDDS_MENUITEM_H
+
 
 #include <iostream>
-#include "Menu.h"
 
 namespace sdds {
 	class MenuItem
@@ -36,7 +36,7 @@ namespace sdds {
 		MenuItem(const char* content);
 		MenuItem(const MenuItem& mi);
 		~MenuItem() {
-			delete this->content;
+			delete[] this->content;
 			this->content = nullptr;
 		}
 
